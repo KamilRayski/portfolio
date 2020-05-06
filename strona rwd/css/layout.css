@@ -1,0 +1,96 @@
+body{
+    display: flex;
+    justify-content: center;
+}
+.menu{
+    list-style-type: none;
+}
+
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.info{
+    list-style-type: none;
+}
+.social{
+    margin: 2rem 0;
+    display: flex;
+    justify-content: space-around;
+}
+.portfolio{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.footer{
+    display: flex;
+    justify-content: center;
+}
+/* Larger than mobile */
+@media (min-width: 100px) {
+    .image{
+        width: 35rem;
+    }
+    .menu li{
+        display: none;
+    }
+}
+
+/* Larger than phablet (also point when grid becomes active) */
+@media (min-width: 550px) {
+    .menu{
+        display: block;
+    }
+    .image{
+        width: 50rem;
+    }
+    .info li{
+        margin-right: 2rem;
+        display: inline;
+    }
+}
+
+/* Larger than tablet */
+@media (min-width: 750px) {
+    .menu{
+        font-size: 2rem;
+    }
+    .menu li{
+        display: inline;
+        margin-right: 1rem;
+    }
+    .menu li:hover{
+        color: #555;
+        cursor: pointer;
+    }
+    .image{
+        width: 60rem;
+    }
+}
+
+/* Larger than desktop */
+@media (min-width: 1000px) {
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .image{
+        width: 70rem;
+    }
+}
+
+/* Larger than Desktop HD */
+@media (min-width: 1200px) {
+    .menu{
+        display: flex;
+        justify-content: space-between;
+    } 
+    .image{
+        width: 80rem;
+    }
+}
+a:hover{
+    color: blue;
+}
